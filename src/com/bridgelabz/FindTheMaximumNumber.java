@@ -3,9 +3,9 @@
  */
 package com.bridgelabz;
 
-public class FindTheMaximum {
+public class FindTheMaximumNumber {
     public static void main(String[] args) {
-        findMaximum(12, 4, 3);
+        findMaximumNumber(1, 10, 3);
     }
 
     /**
@@ -14,7 +14,7 @@ public class FindTheMaximum {
      * @param number3
      * Used to find the maximum number of given three numbers using compareTo method
      */
-    private static void findMaximum(Integer number1,Integer number2 ,Integer number3) {
+    private static void findMaximumNumber(Integer number1, Integer number2 , Integer number3) {
         if((number1.compareTo(number2) == 1) && (number1.compareTo(number3) == 1))
         {
             System.out.println("number1 is greater than number2 and number3");
