@@ -1,14 +1,14 @@
 package com.bridgelabz;
 
 /**
- * Given three strings find the maximum
+ * Refactor all the 3 to One Generic Method and find the maximum
  */
 
-public class MaximumNumber{
+public class GenericMaximumNumber {
     public static void main(String[] args) {
         System.out.println("Maximum String: " +findMaximumString("Pineapple", "Apple", "Banana"));
-        System.out.println("Maximum String: " +findMaximumString("Apple", "Pineapple", "Banana"));
-        System.out.println("Maximum String: " +findMaximumString("Banana", "Apple", "Pineapple"));
+        System.out.println("Maximum Integer Number: " +findMaximumString(24, 55, 22));
+        System.out.println("Maximum Float Number: " +findMaximumString(23.5f, 55.7f, 99.7f));
     }
 
     /**
@@ -18,7 +18,7 @@ public class MaximumNumber{
      * Used to find the maximum string lexicographically(Dictionary order)
      * of given three numbers using compareTo method
      */
-    private static String findMaximumString(String string1, String string2, String  string3) {
+    public static <T extends Comparable> T findMaximumString(T string1, T string2, T string3) {
         if((string1.compareTo(string2) > 0) && (string1.compareTo(string3) > 0))
         {
             return string1;
