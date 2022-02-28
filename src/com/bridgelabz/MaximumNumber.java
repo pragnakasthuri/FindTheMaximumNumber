@@ -1,29 +1,34 @@
 package com.bridgelabz;
 
+/**
+ * Given three strings find the maximum
+ */
+
 public class MaximumNumber{
     public static void main(String[] args) {
-        System.out.println("Maximum Number: " +findMaximumNumber(22.0f, 1.5f, 3.5f));
-        System.out.println("Maximum Number: " +findMaximumNumber(22.0f, 111.5f, 3.5f));
-        System.out.println("Maximum Number: " +findMaximumNumber(22.0f, 1.5f, 333.5f));
+        System.out.println("Maximum String: " +findMaximumString("Pineapple", "Apple", "Banana"));
+        System.out.println("Maximum String: " +findMaximumString("Apple", "Pineapple", "Banana"));
+        System.out.println("Maximum String: " +findMaximumString("Banana", "Apple", "Pineapple"));
     }
 
     /**
-     * @param number1
-     * @param number2
-     * @param number3
-     * Used to find the maximum number of given three numbers using compareTo method
+     * @param string1
+     * @param string2
+     * @param string3
+     * Used to find the maximum string lexicographically(Dictionary order)
+     * of given three numbers using compareTo method
      */
-    private static Float findMaximumNumber(Float number1, Float number2 , Float number3) {
-        if((number1.compareTo(number2) == 1) && (number1.compareTo(number3) == 1))
+    private static String findMaximumString(String string1, String string2, String  string3) {
+        if((string1.compareTo(string2) > 0) && (string1.compareTo(string3) > 0))
         {
-            return number1;
+            return string1;
 
-        }else if((number2.compareTo(number1) == 1) && (number2.compareTo(number3) == 1))
+        }else if((string2.compareTo(string1) > 0) && (string2.compareTo(string3) > 0))
         {
-            return number2;
+            return string2;
         }
         else{
-            return number3;
+            return string3;
         }
     }
 }
