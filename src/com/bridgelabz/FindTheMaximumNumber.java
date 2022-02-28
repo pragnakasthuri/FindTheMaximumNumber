@@ -5,7 +5,7 @@ package com.bridgelabz;
 
 public class FindTheMaximumNumber {
     public static void main(String[] args) {
-        findMaximumNumber(1, 10, 3);
+        findMaximumNumber(2, 1, 30);
     }
 
     /**
