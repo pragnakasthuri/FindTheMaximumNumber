@@ -1,11 +1,11 @@
 /**
- * Given Max Number at 1st Position return the Same Number
+ * Given Max Number at 3rd Position return the Same Number
  */
 package com.bridgelabz;
 
 public class FindTheMaximumNumber {
     public static void main(String[] args) {
-        findMaximumNumber(2, 1, 30);
+        System.out.println("Maximum Number: " +findMaximumNumber(2, 1, 30));
     }
 
     /**
@@ -14,17 +14,17 @@ public class FindTheMaximumNumber {
      * @param number3
      * Used to find the maximum number of given three numbers using compareTo method
      */
-    private static void findMaximumNumber(Integer number1, Integer number2 , Integer number3) {
+    private static Integer findMaximumNumber(Integer number1, Integer number2 , Integer number3) {
         if((number1.compareTo(number2) == 1) && (number1.compareTo(number3) == 1))
         {
-            System.out.println("number1 is greater than number2 and number3");
+            return number1;
 
         }else if((number2.compareTo(number1) == 1) && (number2.compareTo(number3) == 1))
         {
-            System.out.println("number2 is greater than number1 and number3");
+            return number2;
         }
         else{
-            System.out.println("number3 is greater than number1 and number2");
+            return number3;
         }
     }
 }
