@@ -5,7 +5,7 @@ package com.bridgelabz;
 
 public class MaximumNumber{
     public static void main(String[] args) {
-        System.out.println("Maximum Number: " +findMaximumNumber(22, 1, 3));
+        System.out.println("Maximum Number: " +findMaximumNumber(22.0f, 1.5f, 3.5f));
     }
 
     /**
@@ -14,7 +14,7 @@ public class MaximumNumber{
      * @param number3
      * Used to find the maximum number of given three numbers using compareTo method
      */
-    private static Integer findMaximumNumber(Integer number1, Integer number2 , Integer number3) {
+    private static Float findMaximumNumber(Float number1, Float number2 , Float number3) {
         if((number1.compareTo(number2) == 1) && (number1.compareTo(number3) == 1))
         {
             return number1;
