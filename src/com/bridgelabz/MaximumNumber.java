@@ -1,11 +1,10 @@
-/**
- * Given Max Number at 1st Position return the Same Number
- */
 package com.bridgelabz;
 
 public class MaximumNumber{
     public static void main(String[] args) {
         System.out.println("Maximum Number: " +findMaximumNumber(22.0f, 1.5f, 3.5f));
+        System.out.println("Maximum Number: " +findMaximumNumber(22.0f, 111.5f, 3.5f));
+        System.out.println("Maximum Number: " +findMaximumNumber(22.0f, 1.5f, 333.5f));
     }
 
     /**
